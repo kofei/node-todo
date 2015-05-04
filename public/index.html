@@ -43,9 +43,11 @@
 				
 
 				<!-- LOOP OVER THE TODOS IN $scope.todos -->
-				<div class="checkbox" ng-repeat="todo in todos">
+				<div class="button" ng-repeat="todo in todos">
 					<label>
-						<input type="checkbox" ng-click="deleteTodo(todo._id)"> {{ todo.text }}
+						<button type="button" class="btn btn-default" aria-label="Left Align" ng-click="deleteTodo(todo._id)"> {{ todo.text }}
+							<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+						</button>
 					</label>
 				</div>
 
